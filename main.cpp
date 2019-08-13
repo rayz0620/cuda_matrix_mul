@@ -1,8 +1,13 @@
 #include <iostream>
 
-#include "matrixmul/matrix_mul_kernel.h"
+#include "matrixmul/matrix_mul.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    float *m, *n, *p;
+    size_t width = 16;
+
+    MatrixMulVanilla(m, n, p, width);
+
     return 0;
 }
